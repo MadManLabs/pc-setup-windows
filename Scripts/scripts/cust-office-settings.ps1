@@ -21,4 +21,5 @@ Set-ItemProperty "HKCU:\software\policies\microsoft\office\16.0\common" "sendcus
 mkdir -Force "HKCU:\software\policies\microsoft\office\16.0\osm"
 Set-ItemProperty "HKCU:\software\policies\microsoft\office\16.0\osm" "enablelogging" 0
 #Hide the Learn more about SharePoint Hyperlink
+mkdir -Force "HKCU:\software\policies\microsoft\office\16.0\common\sharepointintegration"
 Set-ItemProperty "HKCU:\software\policies\microsoft\office\16.0\common\sharepointintegration" "hidelearnmorelink" 1
