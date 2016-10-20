@@ -23,3 +23,9 @@ Set-ItemProperty "HKLM:\Software\Policies\Microsoft\Windows\AppPrivacy" "LetApps
 
 echo "Disable Feedback"
 Set-ItemProperty "HKLM:\Software\Policies\Microsoft\Windows\DataCollection" "DoNotShowFeedbackNotifications" 1
+
+echo "Show file extensions"
+Set-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "HideFileExt" 1
+
+
+
