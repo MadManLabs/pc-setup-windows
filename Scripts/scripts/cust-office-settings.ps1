@@ -9,6 +9,8 @@ Set-ItemProperty "HKCU:\software\policies\microsoft\office\16.0\common\general" 
 #Disable including screenshot with Office Feedback
 mkdir -Force "HKCU:\software\policies\microsoft\office\16.0\common\feedback"
 Set-ItemProperty "HKCU:\software\policies\microsoft\office\16.0\common\feedback" "includescreenshot" 0
+#Disable send Office feedback
+Set-ItemProperty "HKCU:\software\policies\microsoft\office\16.0\common\feedback" "enabled" 0
 #Disable automatically receive small updates to improve reliability
 Set-ItemProperty "HKCU:\software\policies\microsoft\office\16.0\common" "updatereliabilitydata" 0
 #Disable Customer Experience Improvement Program
@@ -23,6 +25,3 @@ Set-ItemProperty "HKCU:\software\policies\microsoft\office\16.0\osm" "enablelogg
 #Hide the Learn more about SharePoint Hyperlink
 mkdir -Force "HKCU:\software\policies\microsoft\office\16.0\common\sharepointintegration"
 Set-ItemProperty "HKCU:\software\policies\microsoft\office\16.0\common\sharepointintegration" "hidelearnmorelink" 1
-#Disable send Office feedback
-mkdir -Force "HKCU\software\policies\microsoft\office\16.0\common\feedback"
-Set-ItemProperty "HKCU\software\policies\microsoft\office\16.0\common\feedback" "enabled" 0
