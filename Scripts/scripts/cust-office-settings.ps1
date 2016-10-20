@@ -23,3 +23,6 @@ Set-ItemProperty "HKCU:\software\policies\microsoft\office\16.0\osm" "enablelogg
 #Hide the Learn more about SharePoint Hyperlink
 mkdir -Force "HKCU:\software\policies\microsoft\office\16.0\common\sharepointintegration"
 Set-ItemProperty "HKCU:\software\policies\microsoft\office\16.0\common\sharepointintegration" "hidelearnmorelink" 1
+#Disable send Office feedback
+mkdir -Force "HKCU\software\policies\microsoft\office\16.0\common\feedback"
+Set-ItemProperty "HKCU\software\policies\microsoft\office\16.0\common\feedback" "enabled" 0
